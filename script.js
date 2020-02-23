@@ -71,6 +71,11 @@ function tab(t, m) {
 	}
 }
 
+function imc(i, v) {
+	values[i]  = v;
+	gbi("total").value = (values[1]*values[1])/values[0];
+}
+
 function smc() {
 	t = new Date();
 	t = t.getDate() + "/" + t.getMonth() + "/" + t.getYear() + " - " + t.getHours() + ":" + t.getMinutes();
