@@ -74,7 +74,7 @@ function tab(t, m) {
 function imc(i, v) {
 	r = 0;
 	values[i]  = v;
-	total = (values[1]*values[1])/values[0];
+	total = values[0]/(values[1]*values[1]);
 	gbi("total").value = total;
 	
 	for(i=0;i<6;i++)
