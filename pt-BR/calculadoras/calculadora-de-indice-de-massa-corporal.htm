@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculadora de índice de massa corporal - Produtivi.com</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://produtivi.com/pt-BR/">
+					<img src="../../produtivi-logo.svg" width="200px">
+				</a>
+				
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			
+			<div id="navbarBasicExample" class="navbar-menu">
+				<div class="navbar-start">
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link">
+							Calculadoras
+						</a>
+						<div class="navbar-dropdown">
+							<a class="navbar-item">
+								Calculadora de dinheiro
+							</a>
+							<a class="navbar-item is-active">
+								Calculadora de índice de massa corporal
+							</a>
+							<a href="calculadora-regra-de-tres.htm" class="navbar-item">
+								Calculadora de regra de três
+							</a>
+							<hr class="navbar-divider">
+							<a class="navbar-item">
+								Report an issue
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<div class="container">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="http://produtivi.com/pt-BR/">Início</a></li>
+						<li><a href="http://produtivi.com/pt-BR/calculadoras">Calculadoras</a></li>
+						<li class="is-active"><a aria-current="page">Calculadora de índice de massa corporal</a></li>
+					</ul>
+				</nav>
+				<h1 class="title">
+					Calculadora de índice de massa corporal
+				</h1>
+				<p class="subtitle">
+					Você gosta de cometer erros na hora da sangria ou fechamento de caixa? Pois é, eu também não, por isso criei essa ferramenta para facilitar as nossas vidas, simplesmente conte o número de notas e moedas e preencha abaixo que o sistema calculará tudo para você, simples assim.
+				</p>
+				<div class="tabs">
+					<ul>
+						<li id="btab0" class="is-active"><a onclick="tab(0, 2)">A calculadora</a></li>
+						<li id="btab1"><a onclick="tab(1, 2)">Ajuda</a></li>
+					</ul>
+				</div>
+				<div id="tab0">
+					<h2 class="subtitle">Cálculo de índice de massa corporal</h2>
+					<div class="columns is-multiline">
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Seu peso:</label>
+								<div class="control">
+									<input class="input" type="number" min=10 value=0 onchange="imc(0, this.value)">
+								</div>
+								<p class="help">Preencha com o seu peso em Kg.</p>
+							</div>
+							<div class="field">
+								<label class="label">Sua altura:</label>
+								<div class="control">
+									<input class="input" type="number" min=50 value=0 onchange="imc(1, this.value)">
+								</div>
+								<p class="help">Preencha com a sua altura em centímetros.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Resultado:</label>
+								<div class="control">
+									<input class="input" type="number" id="total" disabled>
+								</div>
+								<p class="help">Preencha com a sua altura em centímetros.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<table class="table is-bordered">
+								<thead>
+									<tr>
+										<th>IMC</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td id="imc0">Menos de 18,5 - Abaixo do peso</td>
+									</tr>
+									<tr>
+										<td id="imc1">De 18,5 a 24,9 - Peso normal</td>
+									</tr>
+									<tr>
+										<td id="imc2">De 25 e 29,9 - Sobrepeso</td>
+									</tr>
+									<tr>
+										<td id="imc3">De 30 e 34,9 - Obesidade grau 1</td>
+									</tr>
+									<tr>
+										<td id="imc4">De 35 e 39,9 - Obesidade grau 2</td>
+									</tr>
+									<tr>
+										<td id="imc5">Mais do que 40 - Obesidade grau 3</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="tab1" class="is-hidden">
+					<h2 class="subtitle">Quando usar esta calculadora?</h2>
+					<p class="content">O IMC é um norte para entendermos o nosso índice de gordura corporal, para dados mais completos há a necessidade de procurar um profissional qualificado da área da saúde.</p>
+					<p class="content">Como o IMC usa a média de músculatura e peso ósseo, costuma apresentar um falso positivo para obesidade em indivíduos com maior índice de músculatura (massa magra).</p>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Produtivi.com</strong> feito com ❤️ por <a href="" target="_blank">João Victor</a> com <a href="https://bulma.io/" target="_blank">Bulma.io</a> e hospedado no <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script src="../../script.js"></script>
+</html>
