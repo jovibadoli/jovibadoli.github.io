@@ -72,8 +72,27 @@ function tab(t, m) {
 }
 
 function imc(i, v) {
+	r = 0;
 	values[i]  = v;
-	gbi("total").value = (values[1]*values[1])/values[0];
+	total = (values[1]*values[1])/values[0];
+	gbi("total").value = total;
+	
+	for(i=0;i<6;i++)
+		rc("imc"+i,"has-background-success");
+	
+	if(total < 18.5)
+		r = 0;
+	else if(total < 25)
+		r = 1;
+	else if(total < 30)
+		r = 2;
+	else if(total < 35)
+		r = 3;
+	else if(total < 40)
+		r = 4;
+	else
+		r = 5;
+	ac("imc" + r, "has-background-success");
 }
 
 function smc() {
