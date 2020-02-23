@@ -85,6 +85,6 @@ function smc() {
 		localStorage.smc = JSON.stringify(d);
 	} else {
 		ld = JSON.parse(localStorage.smc);
-		localStorage.smc = JSON.stringify(ld + d);
+		localStorage.smc = JSON.stringify(ld.push(d));
 	}
 }
