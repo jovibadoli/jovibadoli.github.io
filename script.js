@@ -95,6 +95,18 @@ function imc(i, v) {
 	ac("imc" + r, "has-background-success");
 }
 
+function angle(o, v) {
+	elems = [gbi("v0"), gbi("v1"), gbi("v2"), gbi("v3"), gbi("v4"), gbi("v5"), gbi("v6")];
+	
+	if(o == 0) {
+		elems[1].value = elems[0].value*180/π;
+		elems[2].value = elems[0].value*10800/π;
+		elems[3].value = elems[0].value*648000/π;
+		elems[3].value = elems[0].value*0.9549296586;
+		elems[4].value = elems[0].value*0.9549296586;
+	}
+}
+
 function smc() {
 	t = new Date();
 	t = t.getDate() + "/" + t.getMonth() + "/" + t.getYear() + " - " + t.getHours() + ":" + t.getMinutes();
