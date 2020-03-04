@@ -106,8 +106,8 @@ function angle(o, v) {
 		elems[4].value = elems[0].value*0.9549296586;
 	} else if (o == 1) {
 		elems[0].value = elems[0].value*π/180;
-		elems[2].value = elems[0].value*10800/π;
-		elems[3].value = elems[0].value*648000/π;
+		elems[2].value = elems[0].value*60;
+		elems[3].value = elems[0].value*3600;
 		elems[3].value = elems[0].value*0.9549296586;
 		elems[4].value = elems[0].value*0.9549296586;
 	}
