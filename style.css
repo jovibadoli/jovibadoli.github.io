@@ -4,3 +4,7 @@
 .navbar {
       padding: .5rem;
 }
+#logo {
+  min-height: 100%;
+  min-width: 200px;
+}
