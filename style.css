@@ -1,3 +1,6 @@
 .navbar-item {
   display:block!important;
 }
+.navbar {
+      padding: .5rem;
+}
