@@ -8,7 +8,7 @@
   min-height: 100%;
   max-width: 200px;
 }
-@media (min-width:900px)  {
+@media (min-width:1024px)  {
   .has-dropdown {
     display: flex!important;
   }
