@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: produtivi.com
-Token: 2cf4da81484c4a61cdf449a3e76d4b1c44334acabfa4814ce239b0f8c7092ab3
