@@ -80,20 +80,28 @@ function imc(i, v) {
 
 function angle(o, v) {
 	elems = [gbi("v0"), gbi("v1"), gbi("v2"), gbi("v3"), gbi("v4"), gbi("v5"), gbi("v6")];
+	x = 0;
 	
 	if(o == 0) {
-		elems[1].value = elems[0].value*180/π;
-		elems[2].value = elems[0].value*10800/π;
-		elems[3].value = elems[0].value*648000/π;
-		elems[3].value = elems[0].value*0.9549296586;
-		elems[4].value = elems[0].value*0.9549296586;
+		x = elems[0].value*180/π;
 	} else if (o == 1) {
-		elems[0].value = elems[0].value*π/180;
-		elems[2].value = elems[0].value*60;
-		elems[3].value = elems[0].value*3600;
-		elems[3].value = elems[0].value*0.9549296586;
-		elems[4].value = elems[0].value*0.9549296586;
+		x = elems[1].value;
+	} else if (o == 2) {
+		x = elems[2].value/60;
+	} else if (o == 3) {
+		x = elems[3].value/3600;
+	} else if (o == 4) {
+		x = elems[4].value*60;
+	} else if (o == 5) {
+		x = elems[5].value*90;
+	} else if (o == 6) {
+		x = elems[6].value*360;
 	}
+	
+	elems[0].value = x*(180/π);
+	elems[1].value = x;
+	elems[2].value = 60;
+	elems[3].value = 60;
 }
 
 function smc() {
