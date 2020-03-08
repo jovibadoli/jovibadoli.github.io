@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
 
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-});
+});*/
 
 function gbi (e) {
 	return document.getElementById(e);
@@ -38,6 +38,15 @@ function rc (e, c) {
 	t = gbi(e);
 	if (t.classList == c)
 		t.classList.remove(c);
+}
+
+function tc(e, c) {
+	t = gbi(e);
+	t.classList.toggle(c);
+}
+
+function menuMobile() {
+	tc("sitemenu", "is-active");
 }
 		
 values = [];
