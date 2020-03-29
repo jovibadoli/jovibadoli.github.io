@@ -5,7 +5,7 @@
   min-height: 100%;
   max-width: 200px;
 }
-a.navbar-item {
+.navbar-item .is-active {
     background-color: #fafafa;
     color: #3273dc;!important
 }
