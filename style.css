@@ -5,3 +5,7 @@
   min-height: 100%;
   max-width: 200px;
 }
+a.navbar-item {
+    background-color: #fafafa;
+    color: #3273dc;!important
+}
