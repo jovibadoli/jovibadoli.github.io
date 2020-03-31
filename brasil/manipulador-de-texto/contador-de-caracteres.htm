@@ -72,70 +72,10 @@
 							<div class="field">
 								<label class="label">Notas de R$100:</label>
 								<div class="control">
-									<input class="input" type="number" min=0 value=0 onchange="countChars(this.value)">
+									<textarea class="textarea" placeholder="e.g. Hello world" onchange="countChars(this.value)"></textarea>
 								</div>
 								<p>O seu texto possui <span id="v0"></span> caracteres</p>
 							</div>
-						</div>
-					</div>
-					<h2 class="subtitle">Moedas</h2>
-					<div class="columns is-multiline">
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Moedas de R$1:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="v6" onchange="sum(6, this.value*1)">
-								</div>
-								<p class="help">Preencha com o número de moedas de R$1 que você possui.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Moedas de R$0,50:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="v7" onchange="sum(7, this.value*.5)">
-								</div>
-								<p class="help">Preencha com o número de moedas de R$0,50 que você possui.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Moedas de R$0,25:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="v8" onchange="sum(8, this.value*.25)">
-								</div>
-								<p class="help">Preencha com o número de moedas de R$0,25 que você possui.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Moedas de R$0,10:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="v9" onchange="sum(9, this.value*.1)">
-								</div>
-								<p class="help">Preencha com o número de moedas de R$0,10 que você possui.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Moedas de R$0,05:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="v10" onchange="sum(10, this.value*.05)">
-								</div>
-								<p class="help">Preencha com o número de notas de R$0,05 que você possui.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<div class="field">
-								<label class="label">Total R$:</label>
-								<div class="control">
-									<input class="input" type="number" min=0 value=0 id="total" disabled>
-								</div>
-								<p class="help">Este é o total de dinheiro que contamos.</p>
-							</div>
-						</div>
-						<div class="column is-one-third-widescreen">
-							<button class="button is-primary" type="reset">Limpar</button>
 						</div>
 					</div>
 				</form>
