@@ -100,8 +100,11 @@ function angle(o, v) {
 	
 	elems[0].value = x*(180/π);
 	elems[1].value = x;
-	elems[2].value = 60;
-	elems[3].value = 60;
+	elems[2].value = x*60;
+	elems[3].value = x*3600;
+	elems[4].value = x;
+	elems[5].value = x/2;
+	elems[6].value = x*/360;
 }
 
 function smc() {
