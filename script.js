@@ -124,3 +124,7 @@ function smc() {
 		localStorage.smc = JSON.stringify(ld.push(d));
 	}
 }
+
+countChars(c) {
+	gbi("v0").innerHTML = c.length;
+} 
