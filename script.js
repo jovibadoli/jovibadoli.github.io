@@ -125,6 +125,6 @@ function smc() {
 	}
 }
 
-countChars(c) {
+function countChars(c) {
 	gbi("v0").innerHTML = c.length;
 } 
