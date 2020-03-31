@@ -83,7 +83,7 @@ function angle(o, v) {
 	x = 0;
 	
 	if(o == 0) {
-		x = elems[0].value*180/π;
+		x = elems[0].value*180/Math.PI;
 	} else if (o == 1) {
 		x = elems[1].value;
 	} else if (o == 2) {
