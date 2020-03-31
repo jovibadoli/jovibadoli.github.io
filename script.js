@@ -104,7 +104,7 @@ function angle(o, v) {
 	elems[3].value = x*3600;
 	elems[4].value = x;
 	elems[5].value = x/2;
-	elems[6].value = x*/360;
+	elems[6].value = x/360;
 }
 
 function smc() {
