@@ -98,7 +98,7 @@ function angle(o, v) {
 		x = elems[6].value*360;
 	}
 	
-	elems[0].value = x*(180/Math.PI);
+	elems[0].value = x*(Math.PI/180);
 	elems[1].value = x;
 	elems[2].value = x*60;
 	elems[3].value = x*3600;
