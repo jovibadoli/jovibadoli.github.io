@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculadora de dinheiro, sangria e fechamento de caixa fácil e sem erros - Produtivi.com</title>
+		<meta name="description" content="Gosta de se perder na hora de contar dinheiro? Então venha usar essa ferramenta que vai te economizar um bom tempo na hora de contar maiores quantidades de dinheiro, conte cédulas e moedas, nós fazemos a conta pra você!">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+		<style>td, th { text-align: center!important; }</style>
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<link rel="stylesheet" href="../../style.css">
+		<meta http-equiv="Content-Language" content="pt-br">
+	</head>
+	<body>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="https://produtivi.com/brasil/">
+					<img src="https://produtivi.com/produtivi-logo.svg" id="logo" alt="PRODUTIVI.COM">
+				</a>
+				
+				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" onclick="menuMobile()">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			
+			<div id="sitemenu" class="navbar-menu">
+				<div class="navbar-start">
+					<a href="https://produtivi.com/brasil/calculadora/" class="navbar-item is-active">
+						Calculadora
+					</a>
+					<a href="https://produtivi.com/brasil/conversor-de-unidades/" class="navbar-item">
+						Conversor de unidades
+					</a>
+					<a href="https://produtivi.com/brasil/manipulador-de-texto/" class="navbar-item">
+						Manipulador de texto
+					</a>
+					<a href="https://produtivi.com/brasil/gerador-de-numeros/" class="navbar-item">
+						Gerador de números
+					</a>
+				</div>
+			</div>
+		</nav>
+		<section class="section">
+			<div class="container">
+				<nav class="breadcrumb" aria-label="breadcrumbs">
+					<ul>
+						<li><a href="http://produtivi.com/brasil/">Início</a></li>
+						<li><a href="http://produtivi.com/brasil/calculadora">Calculadoras</a></li>
+						<li class="is-active"><a aria-current="page">Calculadora de dinheiro</a></li>
+					</ul>
+				</nav>
+				<a href="https://brave.com/pro698" class="b" target="_blank">
+					<img src="http://produtivi.com/prop-brave.png" class="brave">
+				</a>
+				<h1 class="title">
+					Calculadora de dinheiro
+				</h1>
+				<p class="subtitle">
+					Você gosta de cometer erros na hora da sangria ou fechamento de caixa? Pois é, eu também não, por isso criei essa ferramenta para facilitar as nossas vidas, simplesmente conte o número de notas e moedas e preencha abaixo que o sistema calculará tudo para você, simples assim.
+				</p>
+				<div class="tabs">
+					<ul>
+						<li id="btab0" class="is-active"><a onclick="tab(0, 2)">A calculadora</a></li>
+						<li id="btab1"><a onclick="tab(1, 2)">Ajuda</a></li>
+					</ul>
+				</div>
+				<form id="tab0">
+					<div class="columns is-multiline">
+						<div class="column">
+							<div class="field">
+								<label class="label">Notas de R$100:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 onchange="countChars(this.value)">
+								</div>
+								<p>O seu texto possui <span id="v0"></span> caracteres</p>
+							</div>
+						</div>
+					</div>
+					<h2 class="subtitle">Moedas</h2>
+					<div class="columns is-multiline">
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Moedas de R$1:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="v6" onchange="sum(6, this.value*1)">
+								</div>
+								<p class="help">Preencha com o número de moedas de R$1 que você possui.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Moedas de R$0,50:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="v7" onchange="sum(7, this.value*.5)">
+								</div>
+								<p class="help">Preencha com o número de moedas de R$0,50 que você possui.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Moedas de R$0,25:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="v8" onchange="sum(8, this.value*.25)">
+								</div>
+								<p class="help">Preencha com o número de moedas de R$0,25 que você possui.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Moedas de R$0,10:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="v9" onchange="sum(9, this.value*.1)">
+								</div>
+								<p class="help">Preencha com o número de moedas de R$0,10 que você possui.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Moedas de R$0,05:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="v10" onchange="sum(10, this.value*.05)">
+								</div>
+								<p class="help">Preencha com o número de notas de R$0,05 que você possui.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<div class="field">
+								<label class="label">Total R$:</label>
+								<div class="control">
+									<input class="input" type="number" min=0 value=0 id="total" disabled>
+								</div>
+								<p class="help">Este é o total de dinheiro que contamos.</p>
+							</div>
+						</div>
+						<div class="column is-one-third-widescreen">
+							<button class="button is-primary" type="reset">Limpar</button>
+						</div>
+					</div>
+				</form>
+				<div id="tab1" class="is-hidden">
+					<h2 class="subtitle">Quando usar esta calculadora?</h2>
+					<p class="content">Essa calculadora é muito prática para contar dinheiro, só se preocupe com o número de notas e moedas e deixe os cálculos para nós.</p>
+					<p class="content">Seja para o fechamento de caixa, uma sangria ou só para contar dinheiro, acelere o processo e minimize os erros, apenas preencha o número correto de moedas e notas que o cálculo é feito imediatamente, e se desejar clique em "Salvar no histórico" caso deseje ver este cálculo mais tarde.</p>
+					<!-- <h2 class="subtitle">Onde os meus dados ficam salvos?</h2>
+					<p class="content">Somente no seu navegador de internet, não salvamos nenhum dos seus dados em nossos navegadores, então se não quiser perder o histórico cuidado ao limpar os dados do seu navegador.</p> -->
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Produtivi.com</strong> feito com ❤️ por <a href="" target="_blank">João Victor</a> com <a href="https://bulma.io/" target="_blank">Bulma.io</a> e hospedado no <a href="https://pages.github.com" target="_blank">GitHub Pages</a>
+				</p>
+			</div>
+		</footer>
+	</body>
+	<script src="../../script.js"></script>
+</html>
