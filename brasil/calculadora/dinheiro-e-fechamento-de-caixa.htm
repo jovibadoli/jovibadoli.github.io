@@ -6,7 +6,6 @@
 		<title>Calculadora de dinheiro, sangria e fechamento de caixa fácil e sem erros - Produtivi.com</title>
 		<meta name="description" content="Gosta de se perder na hora de contar dinheiro? Então venha usar essa ferramenta que vai te economizar um bom tempo na hora de contar maiores quantidades de dinheiro, conte cédulas e moedas, nós fazemos a conta pra você!">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-		<style>td, th { text-align: center!important; }</style>
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 		<link rel="stylesheet" href="../../style.css">
 		<meta http-equiv="Content-Language" content="pt-br">
@@ -60,13 +59,7 @@
 				<p class="subtitle">
 					Você gosta de cometer erros na hora da sangria ou fechamento de caixa? Pois é, eu também não, por isso criei essa ferramenta para facilitar as nossas vidas, simplesmente conte o número de notas e moedas e preencha abaixo que o sistema calculará tudo para você, simples assim.
 				</p>
-				<div class="tabs">
-					<ul>
-						<li id="btab0" class="is-active"><a onclick="tab(0, 2)">A calculadora</a></li>
-						<li id="btab1"><a onclick="tab(1, 2)">Ajuda</a></li>
-					</ul>
-				</div>
-				<form id="tab0">
+				<form>
 					<h2 class="subtitle">Notas de dinheiro</h2>
 					<div class="columns is-multiline">
 						<div class="column is-one-third-widescreen">
@@ -185,12 +178,9 @@
 						</div>
 					</div>
 				</form>
-				<div id="tab1" class="is-hidden">
-					<h2 class="subtitle">Quando usar esta calculadora?</h2>
-					<p class="content">Essa calculadora é muito prática para contar dinheiro, só se preocupe com o número de notas e moedas e deixe os cálculos para nós.</p>
-					<p class="content">Seja para o fechamento de caixa, uma sangria ou só para contar dinheiro, acelere o processo e minimize os erros, apenas preencha o número correto de moedas e notas que o cálculo é feito imediatamente, e se desejar clique em "Salvar no histórico" caso deseje ver este cálculo mais tarde.</p>
-					<!-- <h2 class="subtitle">Onde os meus dados ficam salvos?</h2>
-					<p class="content">Somente no seu navegador de internet, não salvamos nenhum dos seus dados em nossos navegadores, então se não quiser perder o histórico cuidado ao limpar os dados do seu navegador.</p> -->
+				<div>
+					<h2 class="subtitle">Como essa calculadora funciona?</h2>
+					<p class="content">Essa calculadora pega todos os campos que você preenche, no caso o número de notas e moedas informadas e multiplica e soma cada um.</p>
 				</div>
 			</div>
 		</section>
