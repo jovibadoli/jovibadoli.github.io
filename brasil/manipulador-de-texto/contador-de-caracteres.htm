@@ -47,8 +47,8 @@
 				<nav class="breadcrumb" aria-label="breadcrumbs">
 					<ul>
 						<li><a href="http://produtivi.com/brasil/">Início</a></li>
-						<li><a href="http://produtivi.com/brasil/calculadora">Calculadoras</a></li>
-						<li class="is-active"><a aria-current="page">Calculadora de dinheiro</a></li>
+						<li><a href="http://produtivi.com/brasil/manipulador-de-texto/">Manipuladores de Texto</a></li>
+						<li class="is-active"><a aria-current="page">Contador de Caracteres</a></li>
 					</ul>
 				</nav>
 				<a href="https://brave.com/pro698" class="b" target="_blank">
@@ -72,7 +72,7 @@
 							<div class="field">
 								<label class="label">Seu texto:</label>
 								<div class="control">
-									<textarea class="textarea" onchange="countChars(this.value)"></textarea>
+									<textarea class="textarea" onkeypress="countChars(this.value)"></textarea>
 								</div>
 								<p>O seu texto possui <span id="v0">0</span> caracteres</p>
 							</div>
