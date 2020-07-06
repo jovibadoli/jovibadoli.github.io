@@ -78,4 +78,6 @@ td, th {
     border-bottom: 1px solid #606060;
 }
 
-input{box-sizing:border-box!important} 
+input{box-sizing:border-box!important}
+
+.emoji {font-size: 1em;}
