@@ -80,4 +80,8 @@ td, th {
 
 input{box-sizing:border-box!important}
 
-.emoji {font-size: 1em;}
+.emoji {
+	height: 1.35em;
+    display: inline!important;
+    margin-bottom: -.3em;
+}
