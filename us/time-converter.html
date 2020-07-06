@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Time converter - Produtivi.com</title>
+		<meta name="description" content="Convert the whished time to nanoseconds, microseconds, miliseconds, seconds, minutes, hours, days, weeks, months, years, decades e centuries">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Time converter</h4>
+			<h6>Have you memorized all the formulas for converting time? Complicated, isn't it? No need for that, just use our angle converter that in seconds you already have the result</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Nanoseconds:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Type the number in nanosecond(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Microseconds:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Type the number in microsecond(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Miliseconds:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Type the number in milisecond(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Seconds:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Type the number in second(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Minutes:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Type the number in minute(s).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Hour:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Type the number in hour(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Day:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Type the number in day(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Week:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Type the number in week(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Month:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Type the number in month(s).</small>
+				</div>
+				<div class="col">
+					<label for="v9">Year:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Type the number in year(s).</small>
+				</div>
+				<div class="col">
+					<label for="v10">Decade:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="unitConvert(10)">
+					<small>Type the number in decade(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Century:</label>
+					<input class="input" type="number" min=0 value=0 id="v11" onchange="unitConvert(11)">
+					<small>Type the number in century(ies).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label>Options:</label><br>
+					<button class="outline" type="reset">🧹 Reset</button>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<input type="hidden" id="max" value=12>
+			<input type="hidden" id="type" value="time">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

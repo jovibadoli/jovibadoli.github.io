@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Character count - Produtivi.com</title>
+		<meta name="description" content="Need to know how many characters your text has? No problem, paste your text below and we'll count the characters for you">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Character count</h4>
+			<h6>Need to know how many characters your text has? No problem, paste your text below and we'll count the characters for you.</h6>
+			<textarea class="textarea" onkeyup="countChars(this.value.length)"></textarea>
+			<p>Your text has <span id="v0">0</span> characters</p>
+			<div class="row">
+				<div class="col">
+					<button class="outline" type="reset">🧹 Reset</button>
+				</div>
+			</div>
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

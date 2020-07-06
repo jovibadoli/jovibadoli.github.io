@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Conversor de ângulos - Produtivi.com</title>
+		<meta name="description" content="Convert the desired angle to Radian, Degree, Minute, Second, Sextant, Quadrant and Circle in seconds, without the need to calculate a single thing.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Angle converter</h4>
+			<h6>Have you already memorized all the formulas for angle conversion? Complicated, isn't it? No need for that, just use our angle converter that in seconds you already have the result</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Radian:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Type the number in radian.</small>
+				</div>
+				<div class="col">
+					<label for="v1">Degree:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Type the number in degree.</small>
+				</div>
+				<div class="col">
+					<label for="v2">Minute:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Type the number in minute.</small>
+				</div>
+				<div class="col">
+					<label for="v3">Second:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Type the number in seconds.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Sextant:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Type the number in sextant.</small>
+				</div>
+				<div class="col">
+					<label for="v5">Quadrant:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Type the number in quadrant.</small>
+				</div>
+				<div class="col">
+					<label for="v6">Circle:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Type the number in círcle.</small>
+				</div>
+				<div class="col">
+					<label>Options:</label><br>
+					<button class="outline" type="reset">❌ Reset</button>
+				</div>
+			</div>
+			<input type="hidden" id="max" value=7>
+			<input type="hidden" id="type" value="angle">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Calculadora de dinheiro, sangria e fechamento de caixa fácil e sem erros - Produtivi.com</title>
+		<meta name="description" content="Gosta de se perder na hora de contar dinheiro? Então venha usar essa ferramenta que vai te economizar um bom tempo na hora de contar maiores quantidades de dinheiro, conte cédulas e moedas, nós fazemos a conta pra você.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Calculadora de dinheiro</h4>
+			<h6>Você gosta de cometer erros na hora da sangria ou fechamento de caixa? Pois é, eu também não, por isso criei essa ferramenta para facilitar as nossas vidas, simplesmente conte o número de notas e moedas e preencha abaixo que o sistema calculará tudo para você, simples assim.</h6>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<h5>Cédulas</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Notas de R$100:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$100.</small>
+				</div>
+				<div class="col">
+					<label for="v1">Notas de R$50:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$50.</small>
+				</div>
+				<div class="col">
+					<label for="v2">Notas de R$20:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$20.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v3">Notas de R$10:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$10.</small>
+				</div>
+				<div class="col">
+					<label for="v4">Notas de R$5:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$5.</small>
+				</div>
+				<div class="col">
+					<label for="v5">Notas de R$2:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="moneyCalculator()">
+					<small>Preencha com o número de nota(s) de R$2.</small>
+				</div>
+			</div>
+			<h5>Moedas</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v6">Moedas de R$1:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$1.</small>
+				</div>
+				<div class="col">
+					<label for="v7">Moedas de R$0,50:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$0,50.</small>
+				</div>
+				<div class="col">
+					<label for="v8">Moedas de R$0,25:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$0,25.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v9">Moedas de R$0,10:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$0,10.</small>
+				</div>
+				<div class="col">
+					<label for="v10">Moedas de R$0,05:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$0,05.</small>
+				</div>
+				<div class="col">
+					<label for="v11">Moedas de R$0,01:</label>
+					<input class="input" type="number" min=0 value=0 id="v11" onchange="moneyCalculator()">
+					<small>Preencha com o número de moedas de R$0,01.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v12">Total:</label>
+					<input class="input" type="number" min=0 value=0 id="v12" disabled>
+					<small>Este é o total de dinheiro que contamos.</small>
+				</div>
+				<div class="col">
+					<label>Opções:</label>
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+			</div>
+			<input type="hidden" id="max" value=12>
+			<input type="hidden" id="locale" value="brazil">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

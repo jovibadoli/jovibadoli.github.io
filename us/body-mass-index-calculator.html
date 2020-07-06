@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Body Mass Index Calculator - Produtivi.com</title>
+		<meta name="description" content="Is it time to start that diet? Enter your weight and height to know the result according to BMI (Body Mass Index), in seconds, without the need to calculate a single thing.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Body Mass Index Calculator</h4>
+			<h6>Want to know if you are overweight or underweight according to your BMI calculation? So just fill in below and check out your result.</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Your weight:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="imc()">
+					<small>Type in your weight in Pounds.</small>
+				</div>
+				<div class="col">
+					<label for="v1">Your height (ft):</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="imc()">
+					<small>Fill in your height (only the ft part).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Your height (in):</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="imc()">
+					<small>Fill in your height (only the in part).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Total:</label>
+					<input class="input" type="text" min=0 value=0 id="v3" disabled>
+					<small>This is the result of your BMI, check the table below.</small>
+				</div>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>IMC</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="imc0">Less than 18,5 - Underweight</td>
+					</tr>
+					<tr>
+						<td id="imc1">De 18,5 a 24,9 - Normal weight</td>
+					</tr>
+					<tr>
+						<td id="imc2">De 25 e 29,9 - Overweight</td>
+					</tr>
+					<tr>
+						<td id="imc3">De 30 e 34,9 - Obesity class 1</td>
+					</tr>
+					<tr>
+						<td id="imc4">De 35 e 39,9 - Obesity class 2</td>
+					</tr>
+					<tr>
+						<td id="imc5">Mais do que 40 - Obesity class 3</td>
+					</tr>
+				</tbody>
+			</table>
+			<input type="hidden" id="locale" value="en">
+			<input type="hidden" id="system" value="imperial">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

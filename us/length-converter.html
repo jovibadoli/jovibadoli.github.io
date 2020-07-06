@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Length converter - Produtivi.com</title>
+		<meta name="description" content="Convert the length to nanometers, micrometers, milimeters, centimeters, inches, feets, yards, meters, kilometers, miles e nautical miles in seconds, without the need to calculate a single thing.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Length converter</h4>
+			<h6>Have you already memorized all formulas for length conversion? Complicated, isn't it? No need for that, just use our area converter that in seconds you already have the result.</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Nanometer:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Type the number in nanometers(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Micrometer:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Type the number in micrometer(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Milimeter:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Type the number in milimeter(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Centimeter:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Type the number in centimeter(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Inch:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Type the number in inch(es).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Feet:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Type the number in feet(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Yard:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Type the number in yard(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Meter:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Type the number in meter(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Kilometer:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Type the number in kilometer(s).</small>
+				</div>
+				<div class="col">
+					<label for="v9">Mile:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Type the number in mile(s).</small>
+				</div>
+				<div class="col">
+					<label for="v10">Nautical mile:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="unitConvert(10)">
+					<small>Type the number in nautical mile(s).</small>
+				</div>
+				<div class="col">
+					<label>Options:</label><br>
+					<button class="outline" type="reset">❌ Reset</button>
+				</div>
+			</div>
+			<input type="hidden" id="max" value=11>
+			<input type="hidden" id="type" value="length">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

@@ -1,53 +1,80 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<urlset>
-<url>
-	<loc>https://produtivi.com/</loc>
-	<lastmod>2020-04-02T20:00:54+01:00</lastmod>
-	<priority>1.0</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/</loc>
-	<lastmod>2020-04-02T20:00:54+01:00</lastmod>
-	<priority>0.8</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/calculadora/</loc>
-	<lastmod>2020-04-02T20:00:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/conversor-de-unidades/</loc>
-	<lastmod>2020-04-02T20:00:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/manipulador-de-texto/</loc>
-	<lastmod>2020-04-02T20:00:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/gerador-de-numeros/</loc>
-	<lastmod>2020-04-02T20:00:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/calculadora/dinheiro-e-fechamento-de-caixa.htm</loc>
-	<lastmod>2020-04-02T20:00:58+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/calculadora/indice-de-massa-corporal.htm</loc>
-	<lastmod>2020-04-02T20:01:00+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/calculadora/regra-de-tres.htm</loc>
-	<lastmod>2020-04-02T20:00:59+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
-<url>
-	<loc>https://produtivi.com/brasil/conversor-de-unidades/angulo.htm</loc>
-	<lastmod>2020-04-02T20:00:59+01:00</lastmod>
-	<priority>0.6</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://produtivi.com/</loc>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-angulo</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/angle-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-area</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/area-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-armazenamento-de-dados</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/data-storage-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-base-numerica</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/numerical-base-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-comprimento</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/length-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/contador-de-caracteres</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/character-counter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/calculadora-de-dinheiro</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/money-calculator"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/calculadora-de-indice-de-massa-corporal</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/body-mass-index-calculator"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/calculadora-de-regra-de-tres</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/proportion-calculator"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-massa</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/mass-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://produtivi.com/brasil/conversor-de-tempo</loc>
+		<xhtml:link rel="alternate" hreflang="en-us" href="https://produtivi.com/us/time-converter"/>
+		<lastmod>2020-05-29T00:15:43+01:00</lastmod>
+		<priority>0.8</priority>
+	</url>
 </urlset>

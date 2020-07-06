@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Data storage converter - Produtivi.com</title>
+		<meta name="description" content="Convert the data storage, bit, byte, kibibyte, kilobyte, mebibyte, megabyte, gibibyte, gigabyte, tebibyte, terabyte, pebibyte, petabyte, exbibyte, exabyte, zebibyte, zettabyte, yobibyte and yottabyte in seconds, without the need to calculate a single thing.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Data storage converter</h4>
+			<h6>Have you memorized all the formulas for converting data storage? Complicated, isn't it? No need for that, just use our angle converter that in seconds you already have the result.</h6>
+			<h5>Bits derivatives</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Bit:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Type the number in bit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Kilobit:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Type the number in kilobit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Megabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Type the number in megabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Gigabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Type the number in gigabit(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Terabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Type the number in terabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Petabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Type the number in petabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Exabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Type the number in exabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Zettabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Type the number in zettabit(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Yottabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Type the number in yottabit(s).</small>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<h5>Byte derivatives</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v9">Byte:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Type the number in byte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v10">Kilobyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="unitConvert(10)">
+					<small>Type the number in kilobyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Megabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v11" onchange="unitConvert(11)">
+					<small>Type the number in megabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Gigabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v12" onchange="unitConvert(12)">
+					<small>Type the number in gigabyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v12">Terabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v13" onchange="unitConvert(13)">
+					<small>Type the number in terabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v13">Petabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v14" onchange="unitConvert(14)">
+					<small>Type the number in petabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v14">Exabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v15" onchange="unitConvert(15)">
+					<small>Type the number in exabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v15">Zettabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v16" onchange="unitConvert(16)">
+					<small>Type the number in zettabyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v16">Yottabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v17" onchange="unitConvert(17)">
+					<small>Type the number in yottabyte(s).</small>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<h5>Computational bit derivatives</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v17">Kibibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v18" onchange="unitConvert(18)">
+					<small>Type the number in kibibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v18">Mebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v19" onchange="unitConvert(19)">
+					<small>Type the number in mebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v19">Gibibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v20" onchange="unitConvert(20)">
+					<small>Type the number in gibibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v20">Tebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v21" onchange="unitConvert(21)">
+					<small>Type the number in tebibyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v22">Pebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v22" onchange="unitConvert(22)">
+					<small>Type the number in pebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v23">Exbibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v23" onchange="unitConvert(23)">
+					<small>Type the number in exbibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v24">Zebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v24" onchange="unitConvert(24)">
+					<small>Type the number in zebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v25">Yobibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v25" onchange="unitConvert(25)">
+					<small>Type the number in yobibyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label>Options:</label><br>
+					<button class="outline" type="reset">❌ Reset</button>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<input type="hidden" id="max" value=26>
+			<input type="hidden" id="type" value="dataStorage">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

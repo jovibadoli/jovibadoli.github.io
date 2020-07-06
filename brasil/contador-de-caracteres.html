@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Contador de caracteres - Produtivi.com</title>
+		<meta name="description" content="Precisa saber quantos caracteres tem o seu texto? Sem problemas, cole o seu texto abaixo que contaremos os caracteres para você.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Contador de caracteres</h4>
+			<h6>Precisa saber quantos caracteres tem o seu texto? Sem problemas, cole o seu texto abaixo que contaremos os caracteres para você.</h6>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<textarea class="textarea" onkeyup="countChars(this.value.length)"></textarea>
+			<p>O seu texto possui <span id="v0">0</span> caracteres</p>
+			<div class="row">
+				<div class="col">
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+			</div>
+			
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

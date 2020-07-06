@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Conversor de armazenamento de dados - Produtivi.com</title>
+		<meta name="description" content="Converta o espaço de armazenamento de dados, bit, byte, kibibyte, kilobyte, mebibyte, megabyte, gibibyte, gigabyte, tebibyte, terabyte, pebibyte, petabyte, exbibyte, exabyte, zebibyte, zettabyte, yobibyte e yottabyte.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Conversor de Armazenamento de dados</h4>
+			<h6>Já decorou todas as fórmulas para conversão de armazenamento de dados? Complicado, não é? Não há necessidade pra isso, basta usar o nosso conversor de ângulo que em segundos você já tem o resultado.</h6>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<h5>Medidas em bit</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Bit:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Preencha com o número em bit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Kilobit:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Preencha com o número em kilobit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Megabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Preencha com o número em megabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Gigabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Preencha com o número em gigabit(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Terabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Preencha com o número em terabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Petabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Preencha com o número em petabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Exabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Preencha com o número em exabit(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Zettabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Preencha com o número em zettabit(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Yottabit:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Preencha com o número em yottabit(s).</small>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<h5>Medidas em byte</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v9">Byte:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Preencha com o número em byte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v10">Kilobyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="unitConvert(10)">
+					<small>Preencha com o número em kilobyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Megabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v11" onchange="unitConvert(11)">
+					<small>Preencha com o número em megabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Gigabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v12" onchange="unitConvert(12)">
+					<small>Preencha com o número em gigabyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v12">Terabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v13" onchange="unitConvert(13)">
+					<small>Preencha com o número em terabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v13">Petabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v14" onchange="unitConvert(14)">
+					<small>Preencha com o número em petabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v14">Exabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v15" onchange="unitConvert(15)">
+					<small>Preencha com o número em exabyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v15">Zettabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v16" onchange="unitConvert(16)">
+					<small>Preencha com o número em zettabyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v16">Yottabyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v17" onchange="unitConvert(17)">
+					<small>Preencha com o número em yottabyte(s).</small>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<h5>Medidas em bit computacional</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v17">Kibibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v18" onchange="unitConvert(18)">
+					<small>Preencha com o número em kibibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v18">Mebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v19" onchange="unitConvert(19)">
+					<small>Preencha com o número em mebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v19">Gibibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v20" onchange="unitConvert(20)">
+					<small>Preencha com o número em gibibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v20">Tebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v21" onchange="unitConvert(21)">
+					<small>Preencha com o número em tebibyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v22">Pebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v22" onchange="unitConvert(22)">
+					<small>Preencha com o número em pebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v23">Exbibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v23" onchange="unitConvert(23)">
+					<small>Preencha com o número em exbibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v24">Zebibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v24" onchange="unitConvert(24)">
+					<small>Preencha com o número em zebibyte(s).</small>
+				</div>
+				<div class="col">
+					<label for="v25">Yobibyte:</label>
+					<input class="input" type="number" min=0 value=0 id="v25" onchange="unitConvert(25)">
+					<small>Preencha com o número em yobibyte(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label>Opções:</label><br>
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<input type="hidden" id="max" value=26>
+			<input type="hidden" id="type" value="dataStorage">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

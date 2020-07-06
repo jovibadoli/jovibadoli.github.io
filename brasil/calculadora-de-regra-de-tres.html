@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Calculadora de regra de três descomplicada - Produtivi.com</title>
+		<meta name="description" content="A regra de três é umas das operações matemáticas mais úteis do dia a dia de todos, ajuda a resolver problemas quando há proporcionalidade entre os fatores.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Calculadora de regra de três</h4>
+			<h6>A regra de três é um dos calculos mais importantes, independente da profissão ou necessidade é comum o uso da regra de três para resolver problemas matemáticos onde há a relação entre os fatores.</h6>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<div class="row">
+				<div class="col">
+					<label for="v0">A:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="proportion()">
+					<small>Preencha com o valor que é proporcional a B.</small>
+				</div>
+				<div class="col">
+					<label for="v1">B:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="proportion()">
+					<small>Preencha com o valor que é proporcional a A.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v2">C:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="proportion()">
+					<small>Preencha com o valor que é proporcional a A e X.</small>
+				</div>
+				<div class="col">
+					<label for="v3">X:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" disabled onchange="moneyCalculator()">
+					<small>Este é o resultado.</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+			</div>
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

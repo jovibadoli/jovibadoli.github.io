@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="en-US">
+		<title>Mass converter - Produtivi.com</title>
+		<meta name="description" content="Convert the wished mass to Microgram, Milligram, Gram, Kilogram, Ton, Ounce, Pound, Stone, UK ton and US ton in seconds, without the need to calculate a single thing.">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/us/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Mass converter</h4>
+			<h6>Have you already memorized all formulas for mass conversion? Complicated, isn't it? No need for that, just use our area converter that in seconds you already have the result</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Microgram:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Type the number in microgram(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Miligram:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Type the number in miligram(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Gram:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Type the number in gram(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Kilogram:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Type the number in Kilogram(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Tonne:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Type the number in tonne(s).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Ounce:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Type the number in ounce(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Pound:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Type the number in pound(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Stone:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Type the number in stone(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">UK ton:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Type the number in UK ton(s).</small>
+				</div>
+				<div class="col">
+					<label for="v9">US ton:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Type the number in US ton(s).</small>
+				</div>
+				<div class="col">
+					<label>Options:</label><br>
+					<button class="outline" type="reset">❌ Reset</button>
+				</div>
+				<div class="col">
+				</div>
+			</div>
+			<input type="hidden" id="max" value=10>
+			<input type="hidden" id="type" value="mass">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com made with ❤️ by <a href="https://twitter.com/jovibadoli">João Victor</a> with <a href="https://kbrsh.github.io/wing/">WingCSS</a> and hosted at <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

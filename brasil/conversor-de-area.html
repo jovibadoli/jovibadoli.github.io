@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Conversor de área - Produtivi.com</title>
+		<meta name="description" content="Converta a área desejada para Milimetro², Centímetro², Metro², Quilômetro², Hectare, Polegada², Pé², Jarda², Milha² e Acre em segundos sem precisar quebrar a cabeça fazendo cálculo">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Conversor de Área</h4>
+			<h6>Já decorou todas as fórmulas para conversão de área? Complicado, não é? Não há necessidade pra isso, basta usar o nosso conversor de área que em segundos você já tem o resultado.</h6>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<h5>Métrico</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Milimetro²:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Preencha com número de milimetros²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Centímetro²:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Preencha com o número de centímetro²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Metro²:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Preencha com o número de metros²(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v3">Quilômetro²:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Preencha com o número de quilômetros²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v4">Hectare:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Preencha com o número de Hectare(s).</small>
+				</div>
+				<div class="col"></div>
+			</div>
+			<h5>Imperial</h5>
+			<div class="row">
+				<div class="col">
+					<label for="v5">Polegada²:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Preencha com o número de polegada²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Pé²:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Preencha com o número de pé²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Jarda²:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Preencha com o número de jarda²(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Milha²:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Preencha com o número de milha²(s).</small>
+				</div>
+				<div class="col">
+					<label for="v9">Acre:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Preencha com o número de acre(s).</small>
+				</div>
+				<div class="col">
+					<label>Opções:</label><br>
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+			</div>
+			<input type="hidden" id="max" value=10>
+			<input type="hidden" id="type" value="area">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>

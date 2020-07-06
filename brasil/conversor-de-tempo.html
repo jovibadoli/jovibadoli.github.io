@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Language" content="pt-br">
+		<title>Conversor de tempo - Produtivi.com</title>
+		<meta name="description" content="Converta o tempo desejado para nanosegundos, microsegundos, milisegundos, segundos, minutos, horas, dias, semanas, meses, anos, décadas e séculos">
+		<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/wingcss"/>
+		<link rel="stylesheet" href="https://produtivi.com/style.css"/>
+		<link rel="manifest" href="https://produtivi.com/manifest.json">
+	</head>
+	<body>
+		<form class="container">
+			<div class="nav">
+				<a class="nav-logo" href="https://produtivi.com/brasil/">
+					<h5>PRODUTIVI.COM</h5>
+				</a>
+			</div>
+			<h4>Conversor de Tempo</h4>
+			<a href="https://brave.com/pro698" id="a1">
+				<img class="slider" src="https://produtivi.com/brasil/prop-brave.png" width="100%">
+			</a>
+			<a href="https://www.vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/vivo-easy"  id="a2" class="hidden">
+				<img class="slider" src="https://produtivi.com/brasil/prop-vivoeasy.png" width="100%">
+			</a>
+			<h6>Já decorou todas as fórmulas para conversão de tempo? Complicado, não é? Não há necessidade pra isso, basta usar o nosso conversor de ângulo que em segundos você já tem o resultado</h6>
+			<div class="row">
+				<div class="col">
+					<label for="v0">Nanosegundo:</label>
+					<input class="input" type="number" min=0 value=0 id="v0" onchange="unitConvert(0)">
+					<small>Preencha com o número em nanosegundo(s).</small>
+				</div>
+				<div class="col">
+					<label for="v1">Microsegundo:</label>
+					<input class="input" type="number" min=0 value=0 id="v1" onchange="unitConvert(1)">
+					<small>Preencha com o número em microsegundo(s).</small>
+				</div>
+				<div class="col">
+					<label for="v2">Milisegundo:</label>
+					<input class="input" type="number" min=0 value=0 id="v2" onchange="unitConvert(2)">
+					<small>Preencha com o número em milisegundo(s).</small>
+				</div>
+				<div class="col">
+					<label for="v3">Segundo:</label>
+					<input class="input" type="number" min=0 value=0 id="v3" onchange="unitConvert(3)">
+					<small>Preencha com o número em segundo(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v4">Minuto:</label>
+					<input class="input" type="number" min=0 value=0 id="v4" onchange="unitConvert(4)">
+					<small>Preencha com o número em minuto(s).</small>
+				</div>
+				<div class="col">
+					<label for="v5">Hora:</label>
+					<input class="input" type="number" min=0 value=0 id="v5" onchange="unitConvert(5)">
+					<small>Preencha com o número em hora(s).</small>
+				</div>
+				<div class="col">
+					<label for="v6">Dia:</label>
+					<input class="input" type="number" min=0 value=0 id="v6" onchange="unitConvert(6)">
+					<small>Preencha com o número em dia(s).</small>
+				</div>
+				<div class="col">
+					<label for="v7">Semana:</label>
+					<input class="input" type="number" min=0 value=0 id="v7" onchange="unitConvert(7)">
+					<small>Preencha com o número em semana(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label for="v8">Mês:</label>
+					<input class="input" type="number" min=0 value=0 id="v8" onchange="unitConvert(8)">
+					<small>Preencha com o número em mês(es).</small>
+				</div>
+				<div class="col">
+					<label for="v9">Ano:</label>
+					<input class="input" type="number" min=0 value=0 id="v9" onchange="unitConvert(9)">
+					<small>Preencha com o número em ano(s).</small>
+				</div>
+				<div class="col">
+					<label for="v10">Década:</label>
+					<input class="input" type="number" min=0 value=0 id="v10" onchange="unitConvert(10)">
+					<small>Preencha com o número em década(s).</small>
+				</div>
+				<div class="col">
+					<label for="v11">Século:</label>
+					<input class="input" type="number" min=0 value=0 id="v11" onchange="unitConvert(11)">
+					<small>Preencha com o número em século(s).</small>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<label>Opções:</label><br>
+					<button class="outline" type="reset">❌ Limpar</button>
+				</div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
+			<input type="hidden" id="max" value=12>
+			<input type="hidden" id="type" value="time">
+		</form>
+		<footer class="row footer">
+			<div class="col text-center">Produtivi.com feito com ❤️ por <a href="https://twitter.com/jovibadoli">João Victor</a> com o <a href="https://kbrsh.github.io/wing/">WingCSS</a> e hospedado no <a href="https://github.com/">GitHub</a></div>
+		</footer>
+	</body>
+	<script src="https://produtivi.com/script.js"></script>
+	<script>prop();</script>
+	<script src="https://produtivi.com/sw.js"></script>
+</html>
