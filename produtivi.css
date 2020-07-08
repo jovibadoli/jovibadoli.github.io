@@ -1,4 +1,4 @@
-*, body, h1, h2, h3, h4, h5, h6 {
+*, body, h4 {
 	font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -10,7 +10,7 @@ body {
 	color: #333;
 }
 
-#menu, #form {
+#menu, .form {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 	grid-gap: 1rem;
